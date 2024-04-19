@@ -2,16 +2,12 @@
 SMTP 2 Telegram very simple relay
 
 # Building
-Building requires go version go1.6.1. You may use older versions, but without any warranty.
+Building tested on go version go1.22.2.
 
-Before build, you must instal several packages:
+Build
 ```
-go get gopkg.in/telegram-bot-api.v4
-go get github.com/spf13/viper
-```
-
-And build program:
-```
+go mod init smtp2tg
+go mod tidy
 go build
 ```
 
